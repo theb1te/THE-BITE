@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- EDITAR: descripción que aparecerá en buscadores -->
+  <meta name="description" content="THE BITE: La mejor reposteria de Colombia.">
+
+
+  <title>THE BITE| Inicio</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <!-- IMPORTANTE: mantener el mismo nombre en todas las pestañas -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+
+  <!-- EDITAR: mensaje promocional general del emprendimiento -->
+  <div class="announcement" id="announcement">
+    <p id="announcementText">Envíos disponibles · Pregunta por nuestros productos y sabores</p>
+    <a href="productos.html">Ver productos <span aria-hidden="true">→</span></a>
+  </div>
+
+
+  <header class="site-header" id="inicio">
+    <nav class="navbar container" aria-label="Navegación principal">
+
+
+      <!-- EDITAR: reemplazar imagen y textos por los datos reales del emprendimiento -->
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="https://lh3.googleusercontent.com/d/1s7tPs1L3TKgB2g3yiCsRyXPbwC55QzID"
+             alt="Logo de THE BITE"
+             class="brand-mark-img">
+        <span class="brand-copy">
+          <strong id="brandName">THE BITE</strong>
+          <small id="brandMiniSlogan">Tu mejor opción</small>
+        </span>
+      </a>
+
+
+      <!-- No cambiar: botón que aparece en pantallas pequeñas -->
+      <button class="icon-button menu-toggle" id="menuToggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+
+      <!-- EDITAR: estos enlaces corresponden a las páginas del proyecto -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li><a class="nav-link" href="productos.html">Productos</a></li>
+        <li><a class="nav-link" href="opiniones.html">Opiniones</a></li>
+        <li><a class="nav-link" href="chatbot.html">Chatbot</a></li>
+        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button"
+                aria-label="Cambiar tema de color" title="Cambiar tema">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+
+
+        <!-- El carrito funciona en la página de productos y conserva datos entre páginas -->
+        <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrito">
+          <span aria-hidden="true">🛒</span>
+          <span class="cart-label">Carrito</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="contenido">
+
+
+    <!-- PARTE 3, PORTADA: se conserva la estructura entregada por el docente -->
+    <section class="hero section">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow" id="heroEyebrow">la bite de las bites</span>
+
+
+          <h1 id="heroTitle">
+            Los mejores productos de reposteria de toda Colombia.</span>
+          </h1>
+
+
+          <p class="hero-description" id="heroDescription">
+            Tenemos variedad de productos y sabores, pregunta por el tuyo.
+          </p>
+
+
+          <!-- EDITAR: llamados a la acción principales -->
+          <div class="button-group">
+            <a class="button button-primary" href="productos.html">
+              Explorar productos <span aria-hidden="true">→</span>
+            </a>
+            <a class="button button-secondary" href="chatbot.html">
+              Hablar con el asesor
+            </a>
+          </div>
+
+
+          <!-- EDITAR: estos datos deben corresponder a cifras reales del emprendimiento -->
+          <div class="hero-proof" id="heroProof" aria-label="Datos destacados">
+            <div><strong>100%</strong><span>Creatividad</span></div>
+            <div><strong>3+</strong><span>Soluciones</span></div>
+            <div><strong>24h</strong><span>Respuesta</span></div>
+          </div>
+        </div>
+
+
+        <div class="hero-visual reveal">
+          <div class="hero-image-card">
+            <!-- EDITAR: imagen principal del emprendimiento -->
+            <img id="heroImage"
+                 src="https://lh3.googleusercontent.com/d/1qJeLOQaGiqaU7F82Cib9elE-OmBONf1N"
+                 alt="Producto destacado del emprendimiento">
+
+
+            <div class="floating-card floating-card-top">
+              <span class="floating-icon" aria-hidden="true">★</span>
+              <div><small>Calificación</small><strong>4.9 / 5</strong></div>
+            </div>
+
+
+            <div class="floating-card floating-card-bottom">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <div><small>Atención</small><strong>Estamos disponibles</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Barra breve de atributos de marca -->
+    <section class="trust-strip" aria-label="Compromisos de la marca">
+      <div class="container trust-grid">
+        <article><span>01</span><div><strong>Diseño</strong><p>Ideas pensadas para destacar.</p></div></article>
+        <article><span>02</span><div><strong>Calidad</strong><p>Priorizamos materiales y acabados.</p></div></article>
+        <article><span>03</span><div><strong>Servicio</strong><p>Te acompañamos antes y después.</p></div></article>
+      </div>
+    </section>
+
+
+    <!-- NUEVO: resumen de las secciones. El detalle vive en cada HTML -->
+    <section class="section section-soft">
+      <div class="container section-heading reveal">
+        <span class="eyebrow">Conoce la propuesta</span>
+        <h2>Todo lo que necesitas, en un solo lugar.</h2>
+        <p>Explora quiénes somos, descubre nuestros productos y encuentra una forma rápida de contactarnos.</p>
+      </div>
+
+
+      <div class="container feature-grid">
+        <a class="feature-card reveal" href="nosotros.html">
+          <span class="feature-number">01</span>
+          <h3>Conócenos</h3>
+          <p>La historia, propósito y valores que están detrás de THE BITE.</p>
+          <span class="text-link">Ver nosotros →</span>
+        </a>
+        <a class="feature-card reveal" href="productos.html">
+          <span class="feature-number">02</span>
+          <h3>Productos</h3>
+          <p>Consulta el catálogo y agrega tus productos favoritos al carrito.</p>
+          <span class="text-link">Ver catálogo →</span>
+        </a>
+        <a class="feature-card reveal" href="contacto.html">
+          <span class="feature-number">03</span>
+          <h3>Hablemos</h3>
+          <p>¿Tienes una pregunta? Escríbenos y encuentra el canal adecuado.</p>
+          <span class="text-link">Contactar →</span>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- EDITAR: llamada final a la acción -->
+    <section class="cta-section">
+      <div class="container cta-box reveal">
+        <div>
+          <span class="eyebrow">¿Listo para conocer más?</span>
+          <h2>Tu próxima idea puede empezar aquí.</h2>
+        </div>
+        <a class="button button-primary" href="productos.html">Ver catálogo →</a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>THE BITE</strong>
+        <p>La bite de las bites.</p>
+      </div>
+      <div class="footer-links">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <small>© <span class="current-year"></span> THE BITE · Proyecto de emprendimiento creado por, Isabela Munera, Isabella Diez y María Paulina Castaño</small>
+    </div>
+  </footer>
+</body>
+</html>
+
